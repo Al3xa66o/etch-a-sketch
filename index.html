@@ -13,15 +13,16 @@
         <div class="content">
             <div class="board"></div>
             <div class="buttons">
-                <button onclick="changeColor('black')"">black</button>
-                <button onclick="changeColor('white')">white</button>
-                <button onclick="changeColor('random')">random</button>
+                <button class="blkButton" onclick="changeColor('black')"">black</button>
+                <button class="emptyButton" onclick="changeColor('white')">empty</button>
+                <button class="rdmButton" onclick="changeColor('random')">random</button>
                 <button onclick="resetBoard()">reset</button>
             </div> 
             <div>
                 <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)" />
                 <button>Set Size</button>
             </div>
+            <div class="error">Input must be between 2 and 100!</div>
         </div>
     </div>
 
