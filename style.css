@@ -1,5 +1,88 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgb(192, 192, 192), white);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 .board {
-    width: 500px;
-    height: 500px;
+    height: 80%;
+    width: 80%;
     display: grid;
+    background-color: white;
+    box-shadow: 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    border: solid 5px;
+    border-radius: 5px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    min-height: 300px;
+    width: 60vw;
+    height: 60vw;
+    max-width: 600px;
+    max-height: 600px;
+}
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button {
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    transition: 0.2s;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.blkButton {
+    background-color: black;
+    color: white;
+}
+.blkButton:hover {
+    background-color: grey;
+    color: whitesmoke;
+}
+
+.emptyButton {
+    background-color: whitesmoke;
+    color: black;
+}
+.emptyButton:hover {
+    background-color: grey;
+    color: black;
+}
+
+.rdmButton {
+    background: linear-gradient(0.25turn, red, orange, yellow, green, blue, indigo, violet);
+    color: white;
+}
+.rdmButton:hover {
+    background: linear-gradient(00.25turn, green, blue, purple, red, rgb(205, 86, 1), orange, yellow)
+}
+
+input {
+    width: 50px;
+}
+.mode {
+    margin-bottom: 5px;
+}
+
+.error {
+    display: none;
 }
